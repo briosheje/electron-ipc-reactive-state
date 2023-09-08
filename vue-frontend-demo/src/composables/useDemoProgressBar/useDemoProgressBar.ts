@@ -1,5 +1,5 @@
 import { computed } from 'vue';
-import { useIpcReactiveState } from '@electron-ipc-reactive-state/ipc-reactive-state-vue';
+import { useIpcReactiveState } from '@briosheje/ipc-reactive-state-vue';
 
 export const useDemoProgressBar = () => {
   const { state } = useIpcReactiveState<{

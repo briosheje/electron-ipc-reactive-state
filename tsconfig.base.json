@@ -21,7 +21,7 @@
       "@briosheje/ipc-reactive-state-react": [
         "ipc-reactive-state-react/src/index.ts"
       ],
-      "@electron-ipc-reactive-state/ipc-reactive-state-vue": [
+      "@briosheje/ipc-reactive-state-vue": [
         "ipc-reactive-state-vue/src/index.ts"
       ]
     }

@@ -1,0 +1,12 @@
+{
+  "name": "@briosheje/ipc-reactive-state-vue",
+  "version": "0.0.1",
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": "^3.3.4",
+    "@briosheje/ipc-reactive-state-electron": "*"
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts"
+}
