@@ -1,0 +1,16 @@
+{
+  "name": "ipc-reactive-state-vue",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./ipc-reactive-state-vue/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["./ipc-reactive-state-vue/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

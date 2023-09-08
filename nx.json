@@ -60,5 +60,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "plugins": ["@nxext/vue"]
 }
