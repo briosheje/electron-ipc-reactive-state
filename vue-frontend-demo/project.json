@@ -1,0 +1,65 @@
+{
+  "name": "vue-frontend-demo",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./vue-frontend-demo/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/vue-frontend-demo"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 3001,
+        "buildTarget": "vue-frontend-demo:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vue-frontend-demo:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "vue-frontend-demo:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "vue-frontend-demo:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vue-frontend-demo:build:development"
+        },
+        "production": {
+          "buildTarget": "vue-frontend-demo:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["./vue-frontend-demo/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "serve-nextjs-frontend-demo": "nx serve nextjs-frontend-demo",
-    "start-electron-demo": "nx build electron-demo && NX_FRONTEND_URL=http://127.0.0.1:3001 npx electron ./dist/electron-demo"
+    "serve-vue-frontend-demo": "nx serve vue-frontend-demo",
+    "start-electron-demo-react": "nx build electron-demo && NX_FRONTEND_URL=http://127.0.0.1:3001 npx electron ./dist/electron-demo",
+    "start-electron-demo-vue": "nx build electron-demo && NX_FRONTEND_URL=http://localhost:3001 npx electron ./dist/electron-demo"
   },
   "private": true,
   "dependencies": {

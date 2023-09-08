@@ -59,6 +59,15 @@
         "style": "scss",
         "linter": "eslint"
       }
+    },
+    "@nxext/vue": {
+      "application": {
+        "linter": "eslint"
+      },
+      "component": {},
+      "library": {
+        "linter": "eslint"
+      }
     }
   },
   "plugins": ["@nxext/vue"]
