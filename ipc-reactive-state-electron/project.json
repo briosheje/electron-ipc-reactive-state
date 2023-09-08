@@ -1,0 +1,47 @@
+{
+  "name": "ipc-reactive-state-electron",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ipc-reactive-state-electron/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/ipc-reactive-state-electron",
+        "main": "ipc-reactive-state-electron/src/index.ts",
+        "tsConfig": "ipc-reactive-state-electron/tsconfig.lib.json",
+        "assets": ["ipc-reactive-state-electron/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs ipc-reactive-state-electron {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "ipc-reactive-state-electron/**/*.ts",
+          "ipc-reactive-state-electron/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "ipc-reactive-state-electron/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

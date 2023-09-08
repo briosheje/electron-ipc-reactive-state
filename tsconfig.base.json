@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@briosheje/ipc-reactive-state-electron": [
+        "ipc-reactive-state-electron/src/index.ts"
+      ],
+      "@briosheje/ipc-reactive-state-react": [
+        "ipc-reactive-state-react/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
