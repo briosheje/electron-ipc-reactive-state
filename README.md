@@ -1,8 +1,8 @@
 # ElectronIpcReactiveState
 
-[![npm version](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-electron.svg)](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-electron)
-[![npm version](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-react.svg)](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-react)
-[![npm version](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-vue.svg)](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-vue)
+[![@briosheje/ipc-reactive-state-electron](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-electron.svg)](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-electron)
+[![@briosheje/ipc-reactive-state-react](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-react.svg)](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-react)
+[![@briosheje/ipc-reactive-state-vue](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-vue.svg)](https://badge.fury.io/js/@briosheje%2Fipc-reactive-state-vue)
 
 This monorepo contains an implementation of a unidirectional/bidirectional state
 handler for electron applications.
