@@ -1,9 +1,9 @@
 {
   "name": "@briosheje/ipc-reactive-state-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {},
   "peerDependencies": {
-    "vue": "^3.3.4",
+    "vue": ">=3.3.4",
     "@briosheje/ipc-reactive-state-electron": "*"
   },
   "main": "./index.js",
